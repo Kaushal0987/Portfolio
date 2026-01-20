@@ -17,7 +17,7 @@
    <a href="#home" class="active">Home</a>
    <a href="#about">About</a>
    <a href="#skills">Skills</a>
-   <a href="./images/Resume.docx" target="_blank" >Resume</a>
+   <a href="Resume.pdf" target="_blank" >Resume</a>
    <a href="#contact">Contact</a>
   </nav>
 
@@ -28,8 +28,7 @@
   <div class="home-sci">
 
    <a href="https://www.facebook.com/kaushaljoshi0987/" target="_blank"><i class='bx bxl-facebook'></i></a>
-   <a href="https://www.instagram.com/iam_venomus/" target="_blank"><i class='bx bxl-instagram' ></i></a>
-   <a href="https://twitter.com/retrorumbel" target="_blank"><i class='bx bxl-twitter' ></i></a>
+   <a href="https://wa.me/9779742388025" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
    <a href="https://github.com/Kaushal0987" target="_blank"><i class='bx bxl-github' ></i></a>
    <a href="https://www.linkedin.com/in/kaushal-joshi-849559260/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
 
@@ -41,9 +40,7 @@
 
    <h3>Frontend Developer</h3>
 
-   <p>Hi! my name is kaushal joshi and I am an up and comming frontend developer.</p>
-
-   <a href="#" class="btn">Hire me</a>
+   <p>Hi! my name is Kaushal Joshi and I am an up and coming Full-Stack Developer specializing in Next.js for modern web applications and Laravel for robust backend solutions.</p>
 
   </div>
 
@@ -52,7 +49,7 @@
     <span></span>
     <span></span>
     <div class="image">
-     <img src="./images/icon.png" alt="image">
+     <img src="pic/icon.png" alt="image">
     </div>
   </div>
 
@@ -60,11 +57,11 @@
 
  <section class="about" id="about">
     <div class="main">
-      <img src="./images/page6.jpg" alt="image">
+      <img src="pic/page6.jpg" alt="image">
       <div class="about-text">
         <h2>About Me</h2>
-        <h5>Developer & Designer</h5>
-        <p>Hi! my name is Kaushal Joshi and I am an up and comming frontend developer. I am currently on the 3rd semmester of Bachelor of Computer Science. I am also studying backend developing.
+        <h5>Full-Stack Developer</h5>
+        <p>Hi! my name is Kaushal Joshi and I am an up and coming Full-Stack developer. I am currently on the 7th semester of Bachelor of Computer Application. I specialize in building modern web applications using Next.js and Laravel frameworks, with expertise in database management including PostgreSQL and MySQL. I'm passionate about creating SEO-optimized websites and crafting intuitive UI/UX designs that deliver exceptional user experiences.
         </p>
         <a href="https://wa.me/9779742388025" target="_blank">
           <button type="button" >Let's Talk</button>
@@ -80,29 +77,29 @@
 
     <div class="box">
       <div class="card">
-        <img src="./images/card/html-5.png" alt="">
-        <h5>Web Development</h5>
+        <img src="pic/nextjs.svg" alt="Next.js">
+        <h5>Next.js Frontend</h5>
 
         <div class="para">
-          <p>Extraodinary way to appreciate data and creativity.</p>
+          <p>Building modern, fast, and scalable web applications with Next js.</p>
         </div>
       </div>
       
       <div class="card">
-        <img src="./images/card/php-code.png" alt="">
-        <h5>Server Side scripting</h5>
+        <img src="pic/laravel.png" alt="Laravel">
+        <h5>Laravel Backend</h5>
 
         <div class="para">
-          <p>Creating a user friendly environment.</p>
+          <p>Developing robust and secure backend solutions with Laravel.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="./images/card/python.png" alt="">
-        <h5>Application Development</h5>
+        <img src="pic/database.png" alt="Database">
+        <h5>Database Management</h5>
 
         <div class="para">
-          <p>Exploring world through application.</p>
+          <p>Expert in PostgreSQL and MySQL for efficient data handling.</p>
         </div>
       </div>
     </div>
@@ -110,9 +107,17 @@
 
   <div class="contact" id="contact">
     <p>Let Me Get You A Beautiful Website.</p>
-    <a href="mailto: kaushaljoshi0987@gmail.com" target="_blank">
-      <button type="button" >E-mail Me</button>
-    </a>
+    <div class="contact-buttons">
+      <a href="https://wa.me/9779742388025" target="_blank">
+        <button type="button">WhatsApp</button>
+      </a>
+      <a href="viber://chat?number=9779742388025" target="_blank">
+        <button type="button">Viber</button>
+      </a>
+      <a href="mailto: kaushaljoshi0987@gmail.com" target="_blank">
+        <button type="button">E-mail Me</button>
+      </a>
+    </div>
   </div>
 
   <footer>
@@ -122,6 +127,39 @@
     </p>
     <p>&copy;Under the Copyright Act 2059 B.S. (2002 A.D.)</p>
   </footer>
+
+  <script>
+    let lastScroll = 0;
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+
+      // Add background color when scrolled past 50px
+      if (currentScroll > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      // Don't hide header at the very top of the page
+      if (currentScroll <= 0) {
+        header.classList.remove('hidden');
+        return;
+      }
+
+      // Scrolling down - hide header
+      if (currentScroll > lastScroll && currentScroll > 80) {
+        header.classList.add('hidden');
+      } 
+      // Scrolling up - show header
+      else if (currentScroll < lastScroll) {
+        header.classList.remove('hidden');
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
 
 </body>
 </html>

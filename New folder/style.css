@@ -15,6 +15,7 @@ body{
 
 .header{
  position: fixed;
+ background-color: #0c1022;
  top: 0;
  left: 0;
  width: 100%;
@@ -23,18 +24,7 @@ body{
  display: flex;
  justify-content: space-between;
  align-items: center;
- z-index: 1000;
- transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-}
-
-.header.scrolled{
- background-color: rgba(12, 16, 34, 0.95);
- backdrop-filter: blur(10px);
- box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.header.hidden{
- transform: translateY(-100%);
+ z-index: center;
 }
 
 .logo{
@@ -62,36 +52,32 @@ body{
 
 .home{
  width: 100%;
- min-height: 100vh;
+ height: 100vh;
  display: flex;
  justify-content: space-between;
  align-items: center;
  padding: 70px 10% 0;
- gap: 2rem;
- flex-wrap: wrap;
 }
 
 .home-content{
- max-width: 600px;
- flex: 1 1 400px;
- min-width: 0;
+ max-width: 500px;
+ margin-left: -30px;
 }
 
 .home-content h1{
- font-size: clamp(2.5rem, 5vw, 3.5rem);
+ font-size: 56px;
  font-weight: 700;
  line-height: 1.2;
 }
 
 .home-content h3{
- font-size: clamp(1.5rem, 3vw, 2rem);
+ font-size: 32px;
  font-weight: 700;
 }
 
 .home-content p{
  font-size: 16px;
  margin: 20px 0 40px;
- text-align: justify;
 }
 
 .btn{
@@ -195,11 +181,8 @@ body{
 }
 
 .home-img{
- width: 100%;
- max-width: 410px;
- height: auto;
- aspect-ratio: 1;
- flex-shrink: 0;
+ width: 410px;
+ height: 410px;
 }
 
 .home-img .glowing-circle{
@@ -248,49 +231,42 @@ body{
  bottom: 250px;
  transform: translateX(-30%);
  max-width: 500px;
- width: 100%;
  object-fit: cover;
  border-radius: 12%;
 }
 
 /* Aboutpage */
 .about{
- width: 100%;
- min-height: 100vh;
- padding: 100px 5%;
+ width: 100vw;
+ height: 100vh;
+ padding: 100px 0px;
  background-color: #130c22;
- display: flex;
- align-items: center;
- justify-content: center;
 }
 
 .about img{
  height: auto;
- width: 100%;
- max-width: 550px;
+ width: 550px;
  border-radius: 30px;
+ margin-bottom: -110px;
 }
 
 .about-text{
- width: 100%;
- max-width: 650px;
- flex: 1 1 400px;
+ width: 650px;
+ margin-top: 100px;
 }
 
 .main{
- width: 100%;
- max-width: 1530px;
+ width: 1530px;
+ max-width: 95%;
  margin: 0 auto;
  display: flex;
  align-items: center;
  justify-content: space-around;
- gap: 3rem;
- flex-wrap: wrap;
 }
 
 .about-text h2{
  color: #fff;
- font-size: clamp(2.5rem, 6vw, 4.7rem);
+ font-size: 75px;
  text-decoration: capitalize;
  margin-bottom: 20px;
 }
@@ -309,7 +285,6 @@ body{
  line-height: 28px;
  font-size: 18px;
  margin-bottom: 45px;
- text-align: justify;
 }
 
 button{
@@ -388,14 +363,13 @@ button:hover{
 .skills{
  background: #241726;
  width: 100%;
- padding: 100px 5%;
+ padding: 100px 0px;
 }
 
 .title h2{
  color: #fff;
- font-size: clamp(2.5rem, 6vw, 4.7rem);
- width: 100%;
- max-width: 1130px;
+ font-size: 75px;
+ width: 1130px;
  margin: 30px auto;
  text-align: center;
 }
@@ -405,32 +379,26 @@ button:hover{
  justify-content: center;
  align-items: center;
  min-height: 400px;
- flex-wrap: wrap;
- gap: 3rem;
 }
 
 .card{
  height: 365px;
- width: 100%;
- max-width: 335px;
- min-width: 280px;
+ width: 335px;
  padding: 20px 35px;
- background: rgba(30, 20, 45, 0.8);
+ background: #856e6e96;
  border-radius: 20px;
+ margin: 52px;
  position: relative;
  overflow: hidden;
  text-align: center;
- flex: 1 1 280px;
- backdrop-filter: blur(10px);
- border: 1px solid rgba(255, 102, 204, 0.2);
 }
 
 .card img{
  width: 70px;
  height: 70px;
  display: block;
- margin: 26px auto;
- object-fit: contain;
+ margin: 26px 0px;
+ transform: translateX(140%);
 }
 
 h5{
@@ -444,14 +412,12 @@ h5{
  font-size: 16px;
  line-height: 27px;
  margin-bottom: 25px;
- text-align: center;
 }
 
 /* ContactPage */
 .contact{
  width: 100%;
- min-height: 490px;
- padding: 80px 5%;
+ height: 490px;
  display: flex;
  align-items: center;
  flex-direction: column;
@@ -460,19 +426,9 @@ h5{
 
 .contact p{
  color: white;
- font-size: clamp(1.5rem, 4vw, 2.5rem);
+ font-size: 40px;
  font-weight: bold;
- margin-bottom: 50px;
- text-align: center;
- padding: 0 20px;
-}
-
-.contact-buttons{
- display: flex;
- gap: 20px;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
+ margin-bottom: 70px;
 }
 
 /*footer*/
@@ -480,8 +436,7 @@ h5{
 footer{
  position: relative;
  width: 100%;
- min-height: 250px;
- padding: 30px 5%;
+ height: 350px;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -490,24 +445,23 @@ footer{
 }
 
 footer p:nth-child(1){
- font-size: 24px;
+ font-size: 30px;
  color: white;
- margin-bottom: 8px;
+ margin-bottom: 10px;
  font-weight: bold;
 }
 
 footer p:nth-child(2){
- font-size: 16px;
+ font-size: 20px;
  color: white;
- margin-bottom: 20px;
+ margin-bottom: 30px;
  font-weight: bold;
  text-align: center;
 }
 
 footer p:nth-child(3){
  font-size: 13px;
- width: 100%;
- max-width: 500px;
+ width: 500px;
  text-align: center;
  line-height: 26px;
  color: #f06;
