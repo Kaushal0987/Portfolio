@@ -1,49 +1,26 @@
 # Kaushal Joshi — Portfolio
 
-Freelance web developer portfolio built with Next.js, TypeScript, and Tailwind CSS.
+Personal portfolio and freelancing site for **Kaushal Joshi**, a web developer based in Kathmandu, Nepal.
 
-## Local development
+**Live site:** [portfolio-kaushaljoshi.vercel.app](https://portfolio-kaushaljoshi.vercel.app)
 
-```bash
-npm install
-npm run dev
-```
+## About
 
-Open [http://localhost:3000](http://localhost:3000).
+A single-page portfolio showcasing services, skills, projects, and a contact form. Built for performance, dark/light theming, and easy content updates from a single data file.
 
-## Environment variables
+## Features
 
-Copy `.env.example` to `.env.local` for the contact form:
+- Hero, About, Experience, Skills, Projects, Services, and Contact sections
+- Interactive dot-field background with cursor collection
+- Dark / light theme toggle
+- Scroll animations (respects reduced motion)
+- Contact form with validation, rate limiting, and [Resend](https://resend.com) email delivery
+- Fully responsive layout
 
-```bash
-cp .env.example .env.local
-```
+## Tech stack
 
-| Variable | Description |
-|---|---|
-| `RESEND_API_KEY` | API key from [resend.com](https://resend.com) |
-| `CONTACT_EMAIL` | Inbox for form submissions |
-
-The site builds and runs without these; the contact form returns an error until they are set.
-
-## Edit content
-
-All site copy, projects, and links live in [`data/site.ts`](data/site.ts).
-
-## Deploy on Vercel
-
-1. Push this repo to GitHub (`Kaushal0987/Portfolio`).
-2. Go to [vercel.com/new](https://vercel.com/new) and import the repository.
-3. Add `RESEND_API_KEY` and `CONTACT_EMAIL` under **Environment Variables**.
-4. Deploy — Vercel auto-detects Next.js; no extra build settings needed.
-
-Custom domain: add it in the Vercel project **Settings → Domains**.
-
-## Scripts
-
-```bash
-npm run dev      # development server
-npm run build    # production build
-npm run start    # run production build locally
-npm run lint     # ESLint
-```
+- [Next.js 16](https://nextjs.org) (App Router)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS 4](https://tailwindcss.com)
+- [Framer Motion](https://www.framer.com/motion)
+- [Zod](https://zod.dev) + [Resend](https://resend.com)
