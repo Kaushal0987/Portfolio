@@ -16,7 +16,7 @@ export function Projects() {
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading
           title="Projects"
-          subtitle="Selected work — security tools, e-commerce, and fullstack apps"
+          subtitle="Selected work — fullstack apps, e-commerce, CMS, and security tools"
         />
 
         <div className="grid gap-4 sm:grid-cols-2">

@@ -91,36 +91,36 @@ export const site = {
   },
   projects: [
     {
-      title: "Sentinel Security Platform",
-      description:
-        "Security-focused personal vault with password management, MFA (TOTP), API rate limiting, and encryption using Argon2id and AES-256-GCM.",
-      category: "fullstack",
-      tags: ["Next.js", "Laravel", "PostgreSQL"],
-      githubUrl: "https://github.com/Kaushal0987/Sentinal-Security-Platform",
-    },
-    {
-      title: "Online Food Ordering System",
-      description:
-        "Full-stack e-commerce platform with menu management, order processing, and customer checkout flow.",
-      category: "fullstack",
-      tags: ["PHP", "MySQL"],
-      githubUrl: "https://github.com/Kaushal0987/Online_Food_Ordering_System",
-    },
-    {
       title: "To-Do WebApp",
       description:
-        "Task management application with Laravel Sanctum authentication, CRUD operations, and a responsive Next.js frontend.",
+        "Full-stack task manager with a Next.js 15 frontend and Laravel 12 API — user auth via Sanctum, CRUD for tasks, and status tracking (ongoing, due, complete).",
       category: "fullstack",
       tags: ["Next.js", "Laravel", "PostgreSQL"],
       githubUrl: "https://github.com/Kaushal0987/To-Do-WebApp",
     },
     {
+      title: "Online Food Ordering System",
+      description:
+        "Full-stack e-commerce platform for restaurants with menu management, order processing, and a customer checkout flow.",
+      category: "fullstack",
+      tags: ["PHP", "MySQL"],
+      githubUrl: "https://github.com/Kaushal0987/Online_Food_Ordering_System",
+    },
+    {
       title: "Safeware",
       description:
-        "Desktop endpoint security application with YARA-based malware scanning, real-time folder monitoring, and system resource tracking.",
+        "Desktop endpoint security app with YARA-based malware scanning, real-time folder monitoring, and live system metrics (CPU, RAM, disk, network).",
       category: "fullstack",
       tags: ["Python", "Tkinter", "YARA"],
       githubUrl: "https://github.com/Kaushal0987/safeware",
+    },
+    {
+      title: "Laravel CMS",
+      description:
+        "Laravel + MySQL + Filament CMS starter for blog posts and static pages — public site with an admin panel at /admin for content management.",
+      category: "cms",
+      tags: ["PHP", "Laravel", "MySQL", "Filament"],
+      githubUrl: "https://github.com/Kaushal0987/laravel-cms",
     },
   ] as Project[],
   nav: [
