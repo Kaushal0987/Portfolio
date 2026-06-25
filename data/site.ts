@@ -42,7 +42,7 @@ export const site = {
     "Web Dev",
     "Cybersecurity",
     "Open Source",
-    "Football",
+    "Music",
     "Gaming",
     "Learning",
   ],
