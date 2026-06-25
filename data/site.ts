@@ -46,12 +46,6 @@ export const site = {
     "Gaming",
     "Learning",
   ],
-  stats: {
-    projects: 4,
-    clients: 2,
-    months: 6,
-    response: "<24h",
-  },
   email: "kaushaljoshi0987@gmail.com",
   social: {
     linkedin: "",
