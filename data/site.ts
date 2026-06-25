@@ -128,7 +128,7 @@ export const site = {
       tags: ["Python", "Tkinter", "YARA"],
       githubUrl: "https://github.com/Kaushal0987/safeware",
     },
-  ] satisfies Project[],
+  ] as Project[],
   nav: [
     { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
@@ -137,4 +137,4 @@ export const site = {
     { label: "Services", href: "#services" },
     { label: "Contact", href: "#contact" },
   ],
-} as const;
+};
